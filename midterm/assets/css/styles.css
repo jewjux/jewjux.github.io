@@ -1,0 +1,301 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #343434;
+    background-color: #432D2D;
+}
+
+/* Header styles */
+header {
+    
+    color: #fff;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.logo img {
+    margin: 0 auto;
+}
+
+.right-content {
+    display: flex;
+    flex-direction: column;
+}
+
+nav ul {
+    font-family: 'EB Garamond', serif;
+    font-size: 20px;
+    background-color: #343434;
+    list-style-type: none;
+    text-align: center;
+    padding: 15px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 60px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+    display: inline-block; /* or block depending on your layout */
+    border-bottom: 2px solid transparent; /* Adjust the color and thickness as needed */
+    transition: border-color 0.3s; /* Smooth transition for the border color */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease-in-out;
+    
+}
+
+nav ul li a:hover {
+    border-bottom: 2px solid #E57552; /* Change to your desired color */
+}
+
+.company-nav ul {
+    font-family: 'EB Garamond', serif;
+    font-size: 20px;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    text-align: center;
+    padding: 20px 100px;
+    gap: 60px;
+    justify-content: center;
+}
+
+.company-nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease-in-out;
+    
+}
+
+.company-nav ul li a:active {
+    border-bottom: 2px solid #E57552; /* Change to your desired color */
+}
+
+
+.company-nav ul li a:hover {
+    border-bottom: 2px solid #E57552; /* Change to your desired color */
+}
+
+.title-strip {
+    background-color: #343434;
+    margin: 0;
+    padding: 10px;
+
+}
+.title-strip h1 {
+    color: #fff;
+    font-family: 'EB Garamond', serif;
+    font-weight: 300;
+    font-size: 30px;
+    text-align: center;
+    border-bottom: 1px solid #E57552; /* Change to your desired color */
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+}
+
+.blog-post {
+    background-color: #A19696;
+    margin: 50px 0px;
+    padding: 0px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: row;
+    flex: 0 0 auto;
+    gap: 30px;
+}
+
+.blog-post img {
+    width: 400px;
+    height: auto;
+}
+
+.blog-post h2 {
+    color: #343434;
+    margin: 20px 0 10px;
+}
+
+.blog-post p {
+    color: #666;
+}
+
+.blog-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-grow: 0;
+    padding: 20px;
+}
+
+.blog-content h2 {
+    font-family: 'EB Garamond', serif;
+    font-size: 30px;
+    color: #fff;
+    font-weight: 300;
+}
+
+.blog-content p {
+    font-family: 'Nunito', sans-serif;
+    color: #000;
+}
+
+.read-more {
+    font-family: 'Nunito', sans-serif;
+    margin-left: auto;
+    background-color: transparent;
+    border-bottom: 1px solid #E57552;
+    color: #000;
+    padding: 5px 10px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.roast-company-content {
+    font-family: 'Nunito', sans-serif;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    margin: 20px;
+    width: 1000px;
+    margin: auto;
+}
+
+.banner {
+    height: 400px; /* Height of the container, same as width for a circle */
+    overflow: hidden; /* Ensures the image does not bleed outside the container */
+    display: flex; /* Centers the image within the container */
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+}
+
+#banner {
+    flex-shrink: 0; /* Prevents resizing */
+    min-width: 100%; /* Ensures the image covers the width of the container */
+    min-height: 100%; /* Ensures the image covers the height of the container */
+    object-fit: cover; /* Ensures the image covers the container, cropping as necessary */
+    
+}
+
+.team {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.circle-container {
+    width: 200px; /* Width of the container */
+    height: 200px; /* Height of the container, same as width for a circle */
+    border-radius: 50%; /* This makes the container circular */
+    overflow: hidden; /* Ensures the image does not bleed outside the container */
+    display: flex; /* Centers the image within the container */
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+}
+
+.person-picture {
+    flex-shrink: 0; /* Prevents resizing */
+    min-width: 100%; /* Ensures the image covers the width of the container */
+    min-height: 100%; /* Ensures the image covers the height of the container */
+    object-fit: cover; /* Ensures the image covers the container, cropping as necessary */
+}
+
+.team ul {
+    list-style-type: none;
+}
+
+.team ul li {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin: 20px;
+}
+
+.bio {
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    color: #fff;
+    line-height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.quote {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center
+}
+
+.quote h3 {
+    font-family: 'EB Garamond', serif;
+    font-size: 20px;
+    font-weight: 200;
+    background-color: #A19696;
+    width: 450px;
+    height: 200px;
+    color: #fff;
+    margin: 0;
+    padding: 30px;
+}
+
+.our-coffee-text {
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    color: #fff;
+    text-align: right;
+    line-height: 30px;
+    margin: 20px;
+    width: 950px;
+    margin-left: auto;
+}
+
+.hours {
+    font-family: 'EB Garamond', serif;
+    font-size: 20px;
+    font-weight: 200;
+    background-color: #A19696;
+    width: 450px;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    padding: 30px;
+}
+
+/* Footer styles */
+footer {
+    font-family: 'EB Garamond', serif;
+    color: #fff;
+    border-top: 2px solid #fff;
+    text-align: center;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+footer p {
+    margin: 10px 0;
+}
