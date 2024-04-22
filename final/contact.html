@@ -3,26 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jewel Aw</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Jewel Aw | Contact</title>
     <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="main-container">
-        <div class="container" id="container">
+        <div class="container"  id="container">
             <div class="left-content">
             <header id="name">
-                <div class="circle-container">
-                    <img src="img/me.jpg" id="mypicture" width="200px">
-                </div>
                 <h1><a href="index.html">jewel aw.</a></h1>
+                
             </header>
             
                 <main>
-                    <p>dedicated to finding solutions to systemic problems in our society, and to create an impact greater than myself.</p>
+                    <h1 id="subtopic">contact</h1>
+                    <section id="contact">
+                        <form id="contact-form">
+                            <p id="greeting">Please fill in the form to contact me!</p>
+                            <input type="text" id="name" name="name" placeholder="name">
+                            <input type="email" id="email" name="email" placeholder="email">
+                            <textarea id="message" name="message" placeholder="message"></textarea>
+                            <button type="submit" id="submit">send</button>
+                        </form>
+                    </section>
                 </main>
             </div>
             <aside id="sidebar" data-testid="sidebar">
@@ -38,9 +45,8 @@
             </aside>
         </div>
 
-        <footer>
-            <p>© 2024 Jewel Aw. All rights reserved.</p>
-        </footer>
-    </div>
+    <footer>
+        <p>© 2024 Jewel Aw. All rights reserved.</p>
+    </footer>
 </body>
 </html>
